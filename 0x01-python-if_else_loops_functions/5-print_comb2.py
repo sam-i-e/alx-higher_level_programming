@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-i = 0
-while i < 100:
-    if i != 99:
-        print('{0:02d}'.format(i), end=', ')
+for number in range(0, 100):
+    if number == 99:
+        print("{}".format(number))
     else:
-        print(i)
-    i += 1
+        print("{:02}".format(number), end=", ")

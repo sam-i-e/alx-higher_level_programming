@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-
-for numeral in range(0, 99):
-    print("{} = {}".format(numeral, hex(numeral)))
+for num in range(0, 99):
+    print('{} = 0x{:x}'.format(num, num))
