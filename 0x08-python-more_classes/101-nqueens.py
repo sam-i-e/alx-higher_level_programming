@@ -80,7 +80,6 @@ def xout(board, row, col):
         board[r][c] = "x"
         c -= 1
 
-
     def recursive_solve(board, row, queens, solutions):
         """Recursively solve an N-queens puzzle.
         Args:
@@ -103,7 +102,6 @@ def xout(board, row, col):
                 solutions = recursive_solve(tmp_board, row + 1,
                                             queens + 1, solutions)
         return (solutions)
-
 
     if __name__ == "__main__":
         if len(sys.argv) != 2:
